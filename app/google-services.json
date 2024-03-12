@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "274831148293",
+    "project_id": "virtual-art-studio-dd3d0",
+    "storage_bucket": "virtual-art-studio-dd3d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274831148293:android:95827344ea54bac0f5a36c",
+        "android_client_info": {
+          "package_name": "com.example.virtualartstudio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274831148293-2e7mttoe5b0mq023rfh0ar37uf1huatf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.virtualartstudio",
+            "certificate_hash": "86d6ece3e612d817bfe86823ce52ea793875f295"
+          }
+        },
+        {
+          "client_id": "274831148293-3hhcd4u6dgr6meoduh3qql2ap9djdc8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDPL3qA0RBPstV-LQHMyXqT5H60_lltoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274831148293-3hhcd4u6dgr6meoduh3qql2ap9djdc8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

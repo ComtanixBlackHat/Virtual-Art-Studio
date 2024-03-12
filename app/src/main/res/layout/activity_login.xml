@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundloign"
+    tools:context=".auth.login">
+
+    <TextView
+        android:id="@+id/LOGIN_TEXTVIEW_HEADING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/skyBlue"
+        android:textStyle="bold"
+        android:textSize="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="4"
+        android:layout_above="@id/LOGIN_login_layout"
+        android:layout_marginBottom="40sp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/LOGIN_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/LOGIN_editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:padding="5dp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/edittext_shape_violet_whitetext"
+            android:hint="Email Address" />
+
+        <EditText
+            android:id="@+id/LOGIN_editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/edittext_shape_violet_whitetext"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            />
+
+        <Button
+            android:id="@+id/LOGIN_loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginBottom="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/button_layout_orange_blue"
+            />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/LOGIN_googleLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with Google"
+            android:layout_marginBottom="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            />
+
+        <TextView
+            android:id="@+id/LOGIN_createAccountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:gravity="center"
+            android:textColor="@color/COLOURSCHEME_Orange_PlainTexts"
+            android:textSize="16sp"
+            android:paddingTop="20dp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="4"
+            android:layout_marginBottom="20sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            />
+    </LinearLayout>
+</RelativeLayout>
