@@ -1,5 +1,6 @@
 package com.example.virtualartstudio.auth;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.virtualartstudio.R;
+import com.example.virtualartstudio.libs.ScreenUtil;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -76,7 +79,11 @@ public class login extends AppCompatActivity {
 
         // Initialize FirebaseAuth instance
         auth = FirebaseAuth.getInstance();
-
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.client_id))
+                .requestEmail()
+                .build();
+        googleSignInClient = GoogleSignIn.getClient(this, gso);
         // Set click listener for "Create New Account" TextView
         textViewCreateNewAccount.setOnClickListener(view -> {
             Intent registerIntent = new Intent(login.this, register.class);
@@ -109,6 +116,7 @@ public class login extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     // Sign in success
                                     Toast.makeText(login.this, "Signed in successfully!", Toast.LENGTH_SHORT).show();
+                                    ScreenUtil.AuthChangeUI(auth , login.this);
                                 } else {
                                     // Sign in failed
                                     Log.e(TAG , task.getException().toString());
@@ -122,8 +130,10 @@ public class login extends AppCompatActivity {
         // Check if user is already logged in
         if (auth.getCurrentUser() != null) {
             // User is already logged in
-
+            ScreenUtil.AuthChangeUI(auth , this);
             Toast.makeText(login.this, "User is already logged in", Toast.LENGTH_SHORT).show();
         }
     }
+
+
 }

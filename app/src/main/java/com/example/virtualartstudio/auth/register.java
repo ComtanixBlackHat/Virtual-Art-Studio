@@ -18,6 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.virtualartstudio.R;
+import com.example.virtualartstudio.libs.ScreenUtil;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -97,6 +98,7 @@ public class register extends AppCompatActivity {
                                     if (databaseTask.isSuccessful()) {
                                         // Database operation successful
                                         Toast.makeText(register.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                                        ScreenUtil.AuthChangeUI(mAuth , register.this);
                                     } else {
                                         // Database operation failed
                                         Toast.makeText(register.this, "Database operation failed: " + databaseTask.getException().getMessage(), Toast.LENGTH_SHORT).show();

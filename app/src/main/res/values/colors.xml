@@ -7,8 +7,10 @@
     <color name="COLOURSCHEME_DarkGreen_background">#012622</color>
     <color name="COLOURSCHEME_DarkGreenLight_background">#012622</color>
     <color name="COLOURSCHEME_OffWhite_Text">#ece5f0</color>
-    <color name="COLOURSCHEME_Orange_PlainTexts">#ece5f0</color>
-    <color name="COLOURSCHEME_Violets_PlainTexts_hints">#ece5f0</color>
+    <color name="COLOURSCHEME_Orange_PlainTexts">#914540</color>
+    <color name="COLOURSCHEME_Violets_PlainTexts_hints">#5317BD</color>
+
+
 
 
 </resources>

@@ -45,7 +45,10 @@
             android:layout_marginBottom="20sp"
             android:background="@drawable/edittext_shape_violet_whitetext"
             android:hint="Full Name"
-            android:padding="5dp" />
+            android:padding="5dp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
+            />
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -57,7 +60,10 @@
             android:background="@drawable/edittext_shape_violet_whitetext"
             android:hint="Email Address"
             android:inputType="textEmailAddress"
-            android:padding="5dp" />
+            android:padding="5dp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
+            />
 
         <EditText
             android:id="@+id/editTextPhoneNumber"
@@ -69,7 +75,10 @@
             android:background="@drawable/edittext_shape_violet_whitetext"
             android:hint="Phone Number"
             android:inputType="phone"
-            android:padding="5dp" />
+            android:padding="5dp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
+            />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -81,7 +90,10 @@
             android:background="@drawable/edittext_shape_violet_whitetext"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="5dp" />
+            android:padding="5dp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
+            />
 
         <EditText
             android:id="@+id/editTextConfirmPassword"
@@ -93,7 +105,10 @@
             android:background="@drawable/edittext_shape_violet_whitetext"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:padding="5dp" />
+            android:padding="5dp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
+            />
         <Spinner
             android:id="@+id/SpinnerConfirmPassword"
             android:layout_width="match_parent"
@@ -101,6 +116,8 @@
             android:layout_marginStart="10sp"
             android:layout_marginEnd="10sp"
             android:layout_marginBottom="20sp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
             android:background="@drawable/edittext_shape_violet_whitetext"
 
 

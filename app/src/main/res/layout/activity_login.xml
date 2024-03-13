@@ -46,7 +46,10 @@
             android:layout_marginEnd="10sp"
             android:layout_marginBottom="20sp"
             android:background="@drawable/edittext_shape_violet_whitetext"
-            android:hint="Email Address" />
+            android:hint="Email Address"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
+            />
 
         <EditText
             android:id="@+id/LOGIN_editTextPassword"
@@ -59,6 +62,8 @@
             android:layout_marginBottom="20sp"
             android:layout_marginStart="10sp"
             android:layout_marginEnd="10sp"
+            android:textColor="@color/COLOURSCHEME_OffWhite_Text"
+            android:textColorHint="@color/COLOURSCHEME_Violets_PlainTexts_hints"
             />
 
         <Button

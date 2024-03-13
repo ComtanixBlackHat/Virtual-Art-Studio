@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/COLOURSCHEME_DarkGreen_background"
     tools:context=".dashboard.artist">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Application Name -->
+    <TextView
+        android:id="@+id/ARTIST_textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual Art Studio"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Sign Out Button (ImageView) -->
+    <ImageView
+        android:id="@+id/ARTIST_imageViewSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_signout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Floating Action Button to Add Paintings or Other Items -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ARTIST_fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/icon_add"
+        app:backgroundTint="@color/colorAccent" />
+
+    <!-- RecyclerView for Paintings or Other Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ARTIST_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ARTIST_textViewAppName"
+        android:layout_above="@id/ARTIST_fabAdd"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
